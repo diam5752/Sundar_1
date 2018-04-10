@@ -21,8 +21,8 @@ public:
 	void insert(int x);
 	void BIAS();
 	int delete_last(list<int>& l);
-	int delete_first(list<int>& l);
-	void pass( list<int>& l1 , list<int>& l2 );
+	//int delete_first(list<int>& l);
+	//void pass( list<int>& l1 , list<int>& l2 );
 	int delete_min();
 
 	void print_PQA();

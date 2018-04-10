@@ -13,6 +13,8 @@ PQA1::~PQA1()
 {
 }
 
+void pass(list<int>& l1, list<int>& l2);
+
 PQA1 PQA1:: create_PQA1()
 {
 	PQA1 p;
@@ -107,7 +109,7 @@ int PQA1::delete_last(list<int>& l) {  // na tin kanw san tin katw, pio generic,
 	return temp;
 }
 
-int PQA1::delete_first( list<int>& l) {
+int delete_first( list<int>& l) {
 	cout << " ... delete first ..." << endl;
 	cout << "removed first item of list : " << l.front() << endl;
 	int temp = l.front();
@@ -116,13 +118,13 @@ int PQA1::delete_first( list<int>& l) {
 	return temp;
 }
 
-void PQA1::pass(list<int>& l1, list<int>& l2) { //pass first(Q1) to rear of Q2   / Dr Df
+void pass(list<int>& l1, list<int>& l2) { //pass first(Q1) to rear of Q2   / Dr Df
 	cout << "... pass ..." << endl;
-	cout << "***before passing *** Dr size = " << Dr.size() << "   Df size = " << Df.size() << endl;
+	cout << "***before passing *** Dr size = " << l1.size() << "   Df size = " << l2.size() << endl;
 		int temp = l1.front();
 	l1.pop_front();
 	l2.push_back(temp);
-	cout << "*** after passing ***  Dr size = " << Dr.size() << "   Df size = " << Df.size() << endl;
+	cout << "*** after passing ***  Dr size = " << l1.size() << "   Df size = " << l2.size() << endl;
 
 }
 
@@ -134,15 +136,17 @@ int PQA1::delete_min() {
 	return delete_first(this->C);
 }
 
-void print_list( list<int> l) {
+void print_list( list<int>& l) {
 	for (std::list<int>::iterator it = l.begin(); it != l.end(); ++it)
 	{
 		std::cout << ' ' << *it ;
 	}
 
 }
+
 void PQA1::print_PQA() {
-	cout << endl << endl <<" *********************************  PQA  *********************************" << endl << endl;
+
+	cout << endl << endl <<" *********************************  PQA 1 *********************************" << endl << endl;
 	
 	cout << " C : "; print_list(this->C); cout << endl;
 	cout << " B : "; print_list(this->B); cout << endl;

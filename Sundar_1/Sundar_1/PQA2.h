@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <iostream>
 #include <list>
+#include "PQA1.h"
 
 
 using namespace std;
@@ -20,7 +21,11 @@ public:
 
 	PQA2 create_PQA2();
 	void insert(int x);
+	void pass_back(list<int>& l1 , list<int>& l2);
+	int delete_last(list<int>& l);
 	void BIAS();
+	void print_PQA2();
+	int delete_min2();
 };
 
 
