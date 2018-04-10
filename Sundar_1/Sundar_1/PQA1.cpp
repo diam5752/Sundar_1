@@ -2,6 +2,7 @@
 #include "PQA1.h"
 
 
+
 PQA1::PQA1()
 {
 	cout << "PQA1 object created." << endl;

@@ -2,6 +2,7 @@
 #include "PQA2.h"
 
 
+
 PQA2::PQA2()
 {
 }
@@ -13,13 +14,13 @@ PQA2::~PQA2()
 
 PQA2 PQA2::create_PQA2() {
 
-	PQA2 p;
-	p.Df = {};
-	p.Dr = {};
-	p.DD = {};
-	p.C = {};
+	PQA2 p2;
+	p2.Df = {};
+	p2.Dr = {};
+	p2.DD = {};
+	p2.C = {};
 
-	return p;
+	return p2;
 }
 
 list<int> rest(list<int> l) {

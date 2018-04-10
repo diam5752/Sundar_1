@@ -8,6 +8,7 @@
 #include <vector>
 
 
+
 void testing_PQA1( PQA1 p) {
 
 	int r , limit;
@@ -35,6 +36,7 @@ void testing_PQA1( PQA1 p) {
 	cout << " /////////////////////////////////////////////////////////////  deletemin in testing : " << p.delete_min() << endl;
 	
 }
+
 
 int main()
 {

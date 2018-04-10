@@ -1,10 +1,12 @@
 #pragma once
-#include "PQA1.h"
 #include <string>
 #include <iostream>
 #include <algorithm>
 #include <iostream>
 #include <list>
+
+
+using namespace std;
 
 
 class PQA2 
