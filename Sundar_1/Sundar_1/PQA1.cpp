@@ -72,7 +72,7 @@ void PQA1::BIAS()
 		// CLEANUP step 
 		if ( this->Df.size() != 0  && this->Df.back() >= this->Dr.front() ) {
 			cout << " first case of case_1" << endl;
-			delete_last();
+			delete_last(this->Df);
 		}
 		else {
 			cout << "second case of case_1" << endl;
@@ -97,10 +97,13 @@ void PQA1::BIAS()
 	}
 }
 
-void PQA1::delete_last() {  // na tin kanw san tin katw, pio generic, na valw lista san argument
+int PQA1::delete_last(list<int>& l) {  // na tin kanw san tin katw, pio generic, na valw lista san argument
 	cout << " ... delete last ..." << endl;
-	cout << "removed last item of Df : " << this->Df.back() << endl;
-	this->Df.pop_back();
+	cout << "removed last item of Df : " << l.back() << endl;
+	int temp = l.back();
+	l.pop_back();
+
+	return temp;
 }
 
 int PQA1::delete_first( list<int>& l) {

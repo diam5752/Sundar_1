@@ -3,11 +3,12 @@
 
 #include "stdafx.h"
 #include "PQA1.h"
+#include "PQA2.h"
 #include <stdlib.h>     /* srand, rand */
 #include <vector>
 
 
-void testing( PQA1 p) {
+void testing_PQA1( PQA1 p) {
 
 	int r , limit;
 	vector<int> v;
@@ -41,17 +42,13 @@ int main()
 
 	p1 = p1.create_PQA1();
 
-	p1.insert(8);
-	p1.insert(9);
-	p1.insert(10);
-	p1.insert(2);
-	p1.insert(3);
+	//testing_PQA1(p1);
 
-	p1.print_PQA();
-	int result = p1.delete_min();
-	cout << endl << endl << "/////////////////////////////////////////////////////  DELETEMIN RETURNED : " << result << endl;
+	//PQA2 p2;
+	//p2 = p2.create_PQA2();
 
-	testing(p1);
+	//p2.insert(5);
+
 
 	return 0;
 }

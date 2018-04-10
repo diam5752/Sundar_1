@@ -10,16 +10,17 @@ using namespace std;
 class PQA1
 {
 private:
-	list<int> Dr , Df, B , C ;
+	list<int> Dr, Df, B, C;
 
 public:
+
 	PQA1();
 	~PQA1();
 
 	PQA1 create_PQA1();
 	void insert(int x);
 	void BIAS();
-	void delete_last();
+	int delete_last(list<int>& l);
 	int delete_first(list<int>& l);
 	void pass( list<int>& l1 , list<int>& l2 );
 	int delete_min();
