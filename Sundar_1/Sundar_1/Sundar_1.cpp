@@ -40,16 +40,16 @@ void testing_PQA1( PQA1 p) {
 
 int main()
 {
-	PQA1 p1;
+	//PQA1 p1;
 
-	p1 = p1.create_PQA1();
+	//p1 = p1.create_PQA1();
 
 	//testing_PQA1(p1);
 
-	//PQA2 p2;
-	//p2 = p2.create_PQA2();
+	PQA2 p2;
+	p2 = p2.create_PQA2();
 
-	//p2.insert(5);
+	p2.insert(5);
 
 
 	return 0;

@@ -1,7 +1,8 @@
 #include "stdafx.h"
 #include "PQA2.h"
+#include "PQA1.h"
 
-
+list<int> rest(list<int> l);
 
 PQA2::PQA2()
 {
@@ -23,12 +24,6 @@ PQA2 PQA2::create_PQA2() {
 	return p2;
 }
 
-list<int> rest(list<int> l) {
-	cout << "rest implementation " << endl;
-	list<int> temp = l;
-	temp.pop_front();
-	return temp;
-}
 
 void PQA2::insert(int x) {
 
